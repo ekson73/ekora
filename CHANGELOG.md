@@ -3614,3 +3614,6 @@ Thanks @AlexMikhalev, @CoreyH, @John-Rood, @KrauseFx, @MaudeBot, @Nachx639, @Nic
 - Discord: avoid duplicate replies when OpenAI emits repeated `message_end` events.
 - Commands: unify /status (inline) and command auth across providers; group bypass for authorized control commands; remove Discord /clawd slash handler.
 - CLI: run `openclaw agent` via the Gateway by default; use `--local` to force embedded mode.
+
+## [2026-08-28] Repo settings
+- enable `allow_auto_merge` (C18 B1 baseline).
