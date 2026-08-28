@@ -257,3 +257,9 @@
   - `node --import tsx scripts/release-check.ts`
   - `pnpm release:check`
   - `pnpm test:install:smoke` or `OPENCLAW_INSTALL_SMOKE_SKIP_NONROOT=1 pnpm test:install:smoke` for non-root smoke path.
+
+## Repo settings
+- `allow_auto_merge`: `true` (C18 B1 baseline · applied 2026-08-28)
+
+## Repo settings
+- `allow_auto_merge`: `true` (C18 B1 baseline · applied 2026-08-28)
