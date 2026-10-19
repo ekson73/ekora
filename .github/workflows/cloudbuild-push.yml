@@ -12,6 +12,8 @@ permissions:
 
 jobs:
   build-and-push:
+    # Skip until the GCP_* repository variables are set; without them auth fails before any build.
+    if: vars.GCP_WIF_PROVIDER != '' && vars.GCP_WIF_SERVICE_ACCOUNT != '' && vars.GCP_PROJECT_ID != ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
