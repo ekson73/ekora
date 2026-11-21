@@ -12,6 +12,8 @@ permissions:
 
 jobs:
   build-and-push:
+    # Skip until every GCP_* repository variable is set; empty ones fail auth or override cloudbuild.yaml defaults.
+    if: vars.GCP_WIF_PROVIDER != '' && vars.GCP_WIF_SERVICE_ACCOUNT != '' && vars.GCP_PROJECT_ID != '' && vars.GCP_REGION != '' && vars.GCP_AR_REPO != '' && vars.GCP_IMAGE_NAME != ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
